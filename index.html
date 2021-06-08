@@ -15,47 +15,28 @@
 	<header> 
 		<body>
 
-			<header class="header"></header> 
-
-				<!-- Logo de la nav bar-->
-				<a href="#"><img class="logo"  src="assets/images/logo/Reservia.svg" 
-					alt=" Reservia"></a>
-
-				<!--Titre projet et texte-->
-				<h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-
-				<p>En plein centre ville ou en pleine nature</p>
-
-			</header>
-			<nav> 
-				<!-- We use href="#" for test links. In a real web site this would be URLs.-->
-				<!--Catégorie de la nav bar-->
-				<ul class="nav-links">
-
-					<li>
-						<a href="#Hebergements"  data-text="Hebergements">Hébergements</a>
-					</li>
-
-					<li>
-						<a href="#Activites"  data-text="Activites">Activités</a>
-					</li>
-
-					<li>
-						<a href="#sinscrire" class="menuSpécial" data-text="s'inscrire">S'inscrire</a>
-					</li>
-			  	</ul>
+			<div class="navbar">
 				
-			</nav>
-
-			
-				<div id="searchbar">
-					<form action="from search" class="formulaire">
-						<input class="champ" type="text" value="Search..)"/>
-						<input class="bouton" type="button" value=" Rechercher"/>
-					
-					</form>
-				</div>
-
+					<div class="logo">
+						<a href="#"><img src="assets/images/logo/Reservia.svg" 
+						alt=" Reservia"></a>
+					</div>			
+					<div class="container">
+						<nav> 
+					<!-- We use href="#" for test links. In a real web site this would be URLs.-->
+							<ul class="menu">
+								<li><a href="#Hebergements" class="active">Hébergements</a></li>
+								<li><a href="#Activites">Activités</a></li>	
+							</ul>
+						<div class="button">
+							<a href="#sinscrire">S'inscrire</a>
+						</div>
+						</nav>
+					</div>
+				
+			</div>
+			<h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+			<p>En plein centre ville ou en pleine nature</p>
 		</body>
 
 	
