@@ -1,0 +1,45 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo
+{
+width: 100px;
+height: auto;
+padding-bottom: 20px;
+}
+
+h2 { 
+font-size: large;
+margin-top: 0;
+}
+
+p {
+   line-height: 0em; /* la hauteur de la ligne est nulle par rapport à la hauteur du texte*/
+}
+
+/*nav  */
+.nav-links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style-type: none;
+}
+li{
+float: left;
+}
+
+li a{
+   display: block;
+    text-decoration:none;
+    color: black;
+    padding: 30px 30px;
+    
+}
+.menuSpecial{
+
+    font-weight: bold;
+    color: #0065fc;
+}
