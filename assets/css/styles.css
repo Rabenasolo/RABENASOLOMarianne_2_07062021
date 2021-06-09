@@ -1,40 +1,78 @@
 *{
-    padding: 0px;
+
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
+}
+.navbar{
+    position: relative;
+    left: 5px;
 }
 .logo{
     padding-left: 0px;
 }
 nav, .menu, .button{
     padding: 5px;
-    display: flex;
+    display: flex; /* positionne horizontalement les block de text*/
     justify-content: flex-end;
     align-items: flex-end;
     height: 7px;
     gap: 3em;
 }
 .menu li {
-  list-style-type: none; 
+  list-style-type: none; /*enleve les puces*/
 }
 .menu a{
     width: 120px; 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
     color: black;
 }
 .navbar .button a{
-    text-decoration: none;
+    text-decoration: none; /*enlève le surlignage */
     font-weight: bold; /*mettre en gras*/
     color: #0065FC;
+    margin-left:auto;
+    margin-right: 25px;
+
 }
 h2 { 
     font-size: large;
     line-height: 1em;
+    position: relative;
+    left: 3px;
+}
+p {
+       line-height: 2em; /* la hauteur de la ligne est nulle par rapport 
+       à la hauteur du texte*/
+       position: relative;
+        left: 3px;
     }
-    
-    p {
-       line-height: 1em; /* la hauteur de la ligne est nulle par rapport à la hauteur du texte*/
-    }
+.searchbar{
+    border:none
+}
+.location,.champ,.recherche{
+    padding: 4px;
+    margin-top: 8px;
+    font-size: 15px; 
+}
+.location{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+
+}
+.champ
+{
+    border-left: none;
+    border-right: none;
+}
+.recherche{
+    cursor: pointer;
+    background: #0065FC;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+
+}
