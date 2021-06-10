@@ -8,48 +8,60 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<!-- bibliotheque d'icone -->
 	<script src="https://kit.fontawesome.com/925fa0416f.js" crossorigin="anonymous"></script>
+
 	<title>Reservia</title>
 	
 </head>
-	<header> 
 		<body>
-
-			<div class="navbar">
-				
-					<div class="logo">
-						<a href="#"><img src="assets/images/logo/Reservia.svg" 
-						alt=" Reservia"></a>
-					</div>			
-					<div class="container">
-						<nav> 
-					<!-- We use href="#" for test links. In a real web site this would be URLs.-->
-							<ul class="menu">
-								<li><a href="#Hebergements" class="active">Hébergements</a></li>
-								<li><a href="#Activites">Activités</a></li>	
-							</ul>
-						<div class="button">
-							<a href="#sinscrire">S'inscrire</a>
-						</div>
-						</nav>
+			<nav> 
+                <div class="navbar"> 
+                   
+                        <div class="logo">
+                            <img class="reservia" src="assets/images/logo/Reservia.svg" 
+                            alt=" Reservia">
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a class="active" href="#"  data-text="Hebergements">Hébergements</a></li>
+                                <li><a class="list" href="#"  data-text="Activites">Activités</a></li>
+                                <li><a href="#" class="login" data-text="s'inscrire">S'inscrire</a></li>
+                            </ul>  
+                        </div>
+                               
+                </div>
+            </nav>
+			<header>
+                <div class="header">
+                    <div class="title">
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <p>En plein centre ville ou en pleine nature</p>  
+                    </div>
+                    <div class="searchbar">
+                        <span class="map" ><i class="fas fa-map-marker-alt"></i></span>
+						<input class="searchtext" type="text" placeholder="Marseille, France"/>
+						<p class="search"> Rechercher </p> 
 					</div>
-				
-			</div>
-			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-			<p>En plein centre ville ou en pleine nature</p>
+                </div>
 
-			<div class="searchbar">
-				<form action="from search" >
-					<button class="location" type="submit">
-						<i class="fas fa-map-marker-alt"></i>
-					</button>
-					<input class="champ" type="text" placeholder="Marseille,France..">
-					
-					<button class="recherche" type="submit">Rechercher</button>
-				</form>
-			</div>
-			
+                    <div class="navlist">
+                        <p>Filtres</p>
+                        <div class="icon-list">
+                        <ul>
+                            <li><span class="eco"><i class="fas fa-money-bill-wave"></i></span>Economique</li>
+                            <li><span class="family"><i class="fas fa-child"></i></span>Famillial</li>
+                            <li><span class="love"><i class="fas fa-heart"></i></span>Romantique</li>
+                            <li><span class="dog"><i class="fas fa-dog"></i></span>Animaux autorisés</li>
+                        </ul>
+                        </div>
+                    </div>
 
-			
+                    <div class=" rappel">
+                    <p><span class="info" ><i class="fas fa-info"></i></span></p>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </div>
+            
+            </header>
 		</body>
 
 	
