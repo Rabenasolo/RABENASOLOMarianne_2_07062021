@@ -15,11 +15,11 @@ body {
 }
 .menu li {
   display: inline;
-  padding: 25px;
+  padding: 35px;
 }
 .menu li a {
   text-decoration: none;
-  padding: 30px 0px 0px 30px;
+  padding: 30px 0px 0px 0px;
 }
 li {
   list-style-type: none;
@@ -27,6 +27,7 @@ li {
 a.active {
   color: #0065fc;
   border-top: 2.5px solid #0065fc;
+  padding-left: 20px;
 }
 .list {
   color: black;
@@ -110,7 +111,7 @@ a.active {
   border-radius: 60px;
 }
 .filtre i {
-  border: 12px solid  #deebff;
+  border: 12px solid #deebff;
   background-color: #deebff;
   color: #0065fc;
 }
@@ -231,7 +232,6 @@ a.active {
   border-radius: 25px;
   row-gap: 15px;
   width: 30%;
-  
 }
 .grid_container_populaires {
   display: grid;
@@ -262,17 +262,17 @@ a.active {
   width: 30%;
 }
 
-.grid_populaires h2 {
+.grid_populaires .texte_populaires h2 {
   font-size: small;
   margin: 5px 0px 5px 0px;
   padding-left: 20px;
 }
 
-.grid_populaires p {
+.grid_populaires .texte_populaires p {
   font-size: x-small;
   margin: 5px 0px 5px 20px;
 }
-.texte_populaires .rating {
+.grid_populaires .texte_populaires .rating {
   padding: 45px 5px 0 20px;
   margin: 0;
 }
@@ -403,9 +403,62 @@ footer {
   padding-left: 10px;
   margin: 0;
 }
-.nos_hébergements {
+.nos_hebergements {
   padding-left: 20%;
 }
 .assistance {
   padding-left: 20%;
+}
+.menu_mobil{
+  display: none;
+}
+.menu_mobil_sinscrire{
+  display: none;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1280px) {
+ 
+}
+@media only screen and (max-width: 600px) {
+  .menu{
+    display: none;
+  }
+  .menu_mobil{
+    display: block;
+  }
+  .menu_mobil_sinscrire{
+    display: block;
+  }
+  .navbar {
+    justify-content: left;
+  }
+  ul {
+    margin: 10px 0 10px 0;
+    padding-left: 10px;
+  }
+  .menu li {
+    padding: 0px;
+  }
+  a.active {
+    border-bottom: 2.5px solid #0065fc;
+    border-top: 0;
+  }
+  .header2 .title {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-small;
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre {
+    padding: 0;
+    margin: 0;
+  }
+  .grid_container_hebergements {
+    display: flex;
+    flex-direction: column;
+  }
 }
