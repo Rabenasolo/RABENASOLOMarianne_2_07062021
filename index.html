@@ -23,7 +23,7 @@
   <body>
     <header>
       <nav>
-        <div class="navbar">
+        <div class="navbar_ordi">
           <div class="logo_reservia">
             <img
               class="reservia"
@@ -31,7 +31,6 @@
               alt=" Reservia"
             />
           </div>
-
           <div class="menu">
             <ul>
               <li>
@@ -55,33 +54,39 @@
               </li>
             </ul>
           </div>
-          <div class="menu_mobil_sinscrire">
+        </div>
+        
+          <div class="menu_sinscrire_mobil">
+            <div class="logo_reservia">
+              <img
+                class="reservia"
+                src="assets/images/logo/Reservia.svg"
+                alt=" Reservia"
+              />
+            </div>
             <a href="#" class="login" data-text="s'inscrire">S'inscrire</a>
           </div>
-          <div class="menu_mobil">
-            <ul>
-              <li>
-                <a
-                  class="active"
-                  href="#mon_ancre_hebergements"
-                  data-text="Hebergements"
-                  >Hébergements</a
-                >
-              </li>
-              <li>
-                <a
-                  class="list"
-                  href="#mon_ancre_activites"
-                  data-text="Activites"
-                  >Activités</a
-                >
-              </li>
-            </ul>
-          </div>
+       
+        <div class="menu_texte_mobil">
+          <ul>
+            <li>
+              <a
+                class="active"
+                href="#mon_ancre_hebergements"
+                data-text="Hebergements"
+                >Hébergements</a
+              >
+            </li>
+            <li>
+              <a class="list" href="#mon_ancre_activites" data-text="Activites"
+                >Activités</a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
 
-      <div class="header2">
+      <div class="header2_ordi">
         <div class="title">
           <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
           <p>En plein centre ville ou en pleine nature</p>
@@ -95,6 +100,22 @@
             placeholder="Marseille, France"
           />
           <p class="search">Rechercher</p>
+        </div>
+      </div>
+      <div class="header2_mobil">
+        <div class="title_mobil">
+          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <div class="searchbar_mobil">
+          <span class="map"><i class="fas fa-map-marker-alt fa-sm"></i></span>
+          <input
+            class="searchtext_mobil"
+            type="text"
+            placeholder="Marseille, France"
+          />
+          <span class="loupe"><i class="fas fa-search"></i></span>
         </div>
       </div>
 
@@ -119,6 +140,7 @@
           </div>
         </div>
       </div>
+     
 
       <div class="rappel">
         <div class="info"><i class="fas fa-info fa-xs"></i></div>
@@ -461,7 +483,7 @@
         <p>Conditions générales de vente</p>
         <p>Données et confidentialité</p>
       </div>
-      <div class="nos_hébergements">
+      <div class="nos_hebergements">
         <h3>Nos hébergements</h3>
         <p>Carte qualité</p>
         <p>Soumettre votre hôtel</p>
