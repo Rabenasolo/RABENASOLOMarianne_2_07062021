@@ -1,5 +1,4 @@
 body {
-  padding: 20px;
   margin: 2px;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -38,6 +37,9 @@ a.active {
 }
 
 /*HEADER*/
+header {
+  padding: 20px;
+}
 .title h2 {
   margin: 0;
   padding: 0;
@@ -78,7 +80,9 @@ a.active {
 }
 /* MAIN*/
 /*HEADER*/
-
+main {
+  padding: 20px;
+}
 .navlist {
   display: flex;
   align-items: center;
@@ -135,11 +139,16 @@ a.active {
 .rappel span {
   margin: 10px;
 }
+.info {
+  border-radius: 12px;
+  border: 1px solid #d5cccc;
+  width: 20px;
+  height: 20px;
+}
 .info i {
   padding: 6px;
   color: #0065fc;
-  border-radius: 12px;
-  border: 1px solid;
+  margin-left: 3px;
 }
 
 /*SECTION*/
@@ -431,8 +440,6 @@ a.active {
   display: none;
 }
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 1280px) {
-}
 
 @media only screen and (max-width: 600px) {
   .navbar_ordi {
@@ -494,7 +501,9 @@ a.active {
     font-size: small;
     margin-left: -10px;
   }
-
+  main{
+    padding: 0;
+  }
   .navlist {
     display: block;
     margin-top: 20px;
@@ -506,11 +515,10 @@ a.active {
     display: block;
     position: absolute;
     top: 0;
-    width: auto;
+    width: 100%;
     padding-bottom: 20px;
     flex-direction: column;
     background-color: #e2e0e0;
-    border-radius: 25px;
     row-gap: 15px;
   }
   .title_les_plus_populaires_mobil {
@@ -583,10 +591,11 @@ a.active {
   }
 
   .nav_hebergements {
-    margin-top: 600px;
+    margin-top: 560px;
     width: auto;
     background-color: white;
   }
+
   .grid_container_activites {
     display: block;
     margin: 20px 0 20px 20px;
@@ -651,7 +660,7 @@ a.active {
   }
   .footer_mobil {
     display: block;
-    background-color: #faf1f1ea;
+    background-color: #d8d8dd;
     margin: 0;
     padding: 20px 0 20px 30px;
   }
@@ -685,6 +694,11 @@ a.active {
   .list-filtre {
     flex-wrap: inherit;
   }
+
+  .blocs {
+    padding: 0;
+  }
+
   .grid_populaires {
     display: block;
     background-color: white;
@@ -700,6 +714,7 @@ a.active {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 15px;
     object-fit: cover;
+    width: 160px;
   }
   .texte_populaires a {
     text-decoration: none;
