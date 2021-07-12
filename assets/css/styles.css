@@ -78,7 +78,7 @@ header {
   font-weight: bold;
   font-size: medium;
 }
-/* MAIN*/
+
 /*HEADER*/
 main {
   padding: 20px;
@@ -150,7 +150,7 @@ main {
   color: #0065fc;
   margin-left: 3px;
 }
-
+/*MAIN*/
 /*SECTION*/
 .blocs {
   display: flex;
